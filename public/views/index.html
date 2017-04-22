@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+  	<meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- jQuery -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,800,700,600,300" rel="stylesheet" type="text/css">
+
+
+    <style type="text/css">
+      html, body { height: 100%; margin: 0; padding: 0; }
+      #map { height: 100%; }
+    </style>
+
+    <!-- This stylesheet contains specific styles for displaying the map
+         on this page. Replace it with your own styles as described in the
+         documentation:
+         https://developers.google.com/maps/documentation/javascript/tutorial -->
+    <link rel="stylesheet" href="https://developers.google.com/maps/documentation/javascript/demos/demos.css">
+  </head>
+
+  <body>
+      <header>
+          <div class="container">
+              <nav class="navbar navbar-default navbar-fixed-top">
+                  <div class="container-fluid">
+                      <div class="navbar-header">
+                          <a class="navbar-brand" href="/#/">
+                              <span class="glyphicon glyphicon-cloud" aria-hidden="true"></span> <span style="font-size: 110%">TwittTrends</span> <span class="open-sans-font" style="font-size: 85%">&nbsp;&nbsp;Cloud Computing Course Project</span>
+                          </a>
+
+                          <!-- Single button -->
+                          <div class="btn-group" style="margin-top: 2%">
+                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <b>Keywords</b><span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li><a href="#" id="music">Music</a></li>
+                              <li><a href="#" id="trump">Trump</a></li>
+                              <li><a href="#" id="nba">NBA</a></li>
+                            </ul>
+                          </div>
+                      </div>
+                  </div>
+              </nav>
+          </div>
+      </header>
+
+      <div class="container">
+          <div id="map"></div>
+      </div>
+
+      <script src="/node_modules/socket.io-client/dist/socket.io.js"></script>
+      <script src="/public/js/googleMap.js"></script>
+      <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB629z1YjTaWUnE5rA2W9w26O-V0wITv0s&callback=initMap">
+      </script>
+  </body>
+</html>

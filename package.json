@@ -1,0 +1,20 @@
+{
+  "name": "TweetTrends",
+  "version": "2.0.0",
+  "description": "Cloud Computing Course Project 2",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jinglong Li",
+  "license": "ISC",
+  "dependencies": {
+    "aws-es": "^1.5.3",
+    "aws-sdk": "^2.43.0",
+    "body-parser": "^1.15.2",
+    "cld": "^2.4.7",
+    "express": "^4.15.2",
+    "ntwitter": "^0.5.0",
+    "socket.io": "^1.7.3"
+  }
+}
