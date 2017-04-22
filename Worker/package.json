@@ -1,0 +1,15 @@
+{
+  "name": "worker",
+  "version": "1.0.0",
+  "description": "Worker node for TweetTrends project",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jinglong Li",
+  "license": "ISC",
+  "dependencies": {
+    "aws-sdk": "^2.44.0",
+    "watson-developer-cloud": "^2.29.0"
+  }
+}

@@ -4,3 +4,6 @@ Archive.zip
 awsConfig.json
 awsESConfig.json
 twitterConfig.json
+/Worker/node_modules
+/Worker/awsConfig.json
+/Worker/wastonConfig.json
